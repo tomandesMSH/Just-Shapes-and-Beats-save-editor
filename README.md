@@ -19,8 +19,8 @@ Settings (musicVolume, sfxVolume, colorBlind, kbLayout, etc.)
 Arcade completion ranks (modelCompletion values per level)
 
 Beat Points cannot be edited
-If you're here hoping to give yourself a ton of Beat Points — unfortunately that's not possible through save file editing.
-During my research into the game's code (GameAssembly.dll), I discovered that the bp field is stored internally as a SecureNumber — an encrypted value with a randomly generated key and an integrity check. This means:
+If you're here hoping to give yourself a ton of Beat Points, unfortunately that's not possible through save file editing.
+During my research into the game's code (GameAssembly.dll), I discovered that the bp field is stored internally as a SecureNumber aka. an encrypted value with a randomly generated key and an integrity check. This means:
 The value stored in the save file is not the raw BP number you see in-game
 Manually changing it will either display 0 BP, corrupt your save, or reset your entire progress
 The game includes a built-in cheat detection system (UI_CheatDetected) that triggers when the value doesn't match its internal checksum

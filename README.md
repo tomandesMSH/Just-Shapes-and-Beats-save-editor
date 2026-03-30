@@ -5,6 +5,8 @@ A save file editor for Just Shapes & Beats that lets you decode the game's binar
 ## Save File:
 
 `C:\Program Files (x86)\Steam\userdata`
+
+
 Replace {YOUR SteamID} with your actual Steam ID (a numeric folder name).
 If there are more Steam users and you do not know which one is yours use:
 [steamid.io](steamid.io) - steamID3 without [U:1:
@@ -17,7 +19,7 @@ Settings (musicVolume, sfxVolume, colorBlind, kbLayout, etc.)
 Arcade completion ranks (modelCompletion values per level)
 
 Beat Points cannot be edited
-If you're here hoping to give yourself a ton of Beat Points — unfortunately that's not possible through save file editing. 
+If you're here hoping to give yourself a ton of Beat Points — unfortunately that's not possible through save file editing.
 During my research into the game's code (GameAssembly.dll), I discovered that the bp field is stored internally as a SecureNumber — an encrypted value with a randomly generated key and an integrity check. This means:
 The value stored in the save file is not the raw BP number you see in-game
 Manually changing it will either display 0 BP, corrupt your save, or reset your entire progress
